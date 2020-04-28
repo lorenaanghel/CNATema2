@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+import "OperationResponse.proto";
+import "NameRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service NameOperationService {
+	rpc SayHello(NameRequest) returns (OperationResponse);
+}
